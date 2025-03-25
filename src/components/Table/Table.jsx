@@ -38,10 +38,10 @@ const table = () => {
                     <div key={index}
                         onClick={() => setCurrentLang(languages[index])} className={` ${currentLang.name === language.name ? 'bg-amber-400 text-black' : 'bg-blue-600 text-white'} cursor-pointer rounded-md  p-2`}>{language.name}</div>
                 ))}
-                <div className="border border-stone-300 rounded-lg w-[65%] p-4 ">
-                    <h2 className='font-semibold pb-2 text-xl'>{currentLang.name}</h2>
-                    <p>{currentLang.content}</p>
-                </div>
+            </div>
+            <div className="border border-stone-300 rounded-lg w-[65%] p-4  m-8">
+                <h2 className='font-semibold pb-2 text-xl'>{currentLang.name}</h2>
+                <p>{currentLang.content}</p>
             </div>
 
         </div>
