@@ -28,8 +28,7 @@ const table = () => {
             content: "React is a JavaScript library for building user interfaces, particularly single-page applications where UI updates are frequent."
         }
     ]
-    const [currentLang, setCurrentLang] = useState(languages[0])
-    const [active, setActive] = useState(false)
+    const [currentLang, setCurrentLang] = useState('')
 
     return (
         <div className=''>
@@ -40,8 +39,7 @@ const table = () => {
                 ))}
             </div>
             <div className="border border-stone-300 rounded-lg w-[65%] p-4  m-8">
-                <h2 className='font-semibold pb-2 text-xl'>{currentLang.name}</h2>
-                <p>{currentLang.content}</p>
+                {currentLang ? <><h2 className='font-semibold pb-2 text-xl'>{currentLang.name}</h2> <p>{currentLang.content}</p> </> : <h2>Nessun Elemento selezionato</h2>}
             </div>
 
         </div>

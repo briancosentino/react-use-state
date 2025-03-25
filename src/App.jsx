@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import Table from './components/Table/Table'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
